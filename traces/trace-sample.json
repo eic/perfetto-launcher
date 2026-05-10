@@ -1,0 +1,68 @@
+{
+  "traceEvents": [
+    {
+      "name": "status:pending",
+      "cat": "status",
+      "ph": "X",
+      "ts": 0,
+      "dur": 80000,
+      "pid": 0,
+      "tid": 0
+    },
+    {
+      "name": "build:eic-shell",
+      "cat": "build",
+      "ph": "X",
+      "ts": 200000,
+      "dur": 2800000000,
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "name": "build:jug_xl",
+      "cat": "build",
+      "ph": "X",
+      "ts": 200000,
+      "dur": 3400000000,
+      "pid": 1,
+      "tid": 2
+    },
+    {
+      "name": "deploy:singularity",
+      "cat": "deploy",
+      "ph": "X",
+      "ts": 3500000000,
+      "dur": 600000000,
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "name": "benchmarks:dis",
+      "cat": "benchmarks",
+      "ph": "X",
+      "ts": 3600000000,
+      "dur": 1200000000,
+      "pid": 3,
+      "tid": 1
+    },
+    {
+      "name": "waterfall:upload",
+      "cat": "status",
+      "ph": "X",
+      "ts": 4800000000,
+      "dur": 15000000,
+      "pid": 0,
+      "tid": 0
+    },
+    {
+      "name": "status:success",
+      "cat": "status",
+      "ph": "X",
+      "ts": 4820000000,
+      "dur": 90000,
+      "pid": 0,
+      "tid": 0
+    }
+  ],
+  "displayTimeUnit": "ms"
+}
