@@ -42,15 +42,13 @@
         }
         status.textContent = 'Recent pipeline traces \u2014 click to open in Perfetto:';
         const table = document.createElement('table');
-        table.innerHTML = '<thead><tr><th>Pipeline</th><th>Uploaded (local time)</th></tr></thead>';
+        table.innerHTML = '<thead><tr><th>Pipeline</th></tr></thead>';
         const tbody = document.createElement('tbody');
         for (const t of traces) {
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
-          const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
-          tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>'
-                       + '<td>' + date + '</td>';
+          tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>';
           tbody.appendChild(tr);
         }
         table.appendChild(tbody);

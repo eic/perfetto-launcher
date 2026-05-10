@@ -23,8 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # full history needed for git-log timestamps
 
       - name: Build site
         run: |
@@ -35,32 +33,23 @@ jobs:
             [ "$(basename "$f")" = "index.json" ] && continue
             cp "$f" _site/traces/
           done
-          # Generate _site/traces/index.json from git history
+          # Generate _site/traces/index.json from numeric trace IDs
           python3 - << 'PYEOF'
-          import json, os, re, subprocess
+          import json, os, re
 
-          traces = []
-          for fname in sorted(os.listdir('traces')):
-              if not fname.endswith('.json') or fname == 'index.json':
+          entries = []
+          for fname in os.listdir('traces'):
+              m = re.fullmatch(r'trace-(\d+)\.json', fname)
+              if not m:
                   continue
-              path = f'traces/{fname}'
-              result = subprocess.run(
-                  ['git', 'log', '--follow', '--format=%aI %s', '-1', '--', path],
-                  capture_output=True, text=True, check=True,
-              )
-              line = result.stdout.strip()
-              if not line:
-                  continue
-              uploaded_at, _, subject = line.partition(' ')
-              m = re.search(r'pipeline (\S+)', subject)
-              pipeline_id = m.group(1) if m else ''
-              traces.append({
-                  'path': path,
-                  'uploaded_at': uploaded_at,
-                  'pipeline_id': pipeline_id,
+              entries.append({
+                  'id': int(m.group(1)),
+                  'path': f'traces/{fname}',
+                  'pipeline_id': m.group(1),
               })
 
-          traces.sort(key=lambda x: x['uploaded_at'], reverse=True)
+          entries.sort(key=lambda x: x['id'], reverse=True)
+          traces = [{'path': e['path'], 'pipeline_id': e['pipeline_id']} for e in entries]
           traces = traces[:50]
 
           out = '_site/traces/index.json'

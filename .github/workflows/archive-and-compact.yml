@@ -1,0 +1,111 @@
+name: Archive and compact trace history
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trace-archive-compact-main
+  cancel-in-progress: false
+
+jobs:
+  archive-and-compact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Select traces to archive
+        id: select
+        run: |
+          python3 - << 'PYEOF'
+          import os
+          import re
+
+          keep_count = 1000
+          traces_dir = 'traces'
+          files = []
+          for name in os.listdir(traces_dir):
+              m = re.fullmatch(r'trace-(\d+)\.json', name)
+              if not m:
+                  continue
+              files.append((int(m.group(1)), os.path.join(traces_dir, name)))
+          files.sort(key=lambda x: x[0], reverse=True)
+          archive = files[keep_count:]
+
+          output_path = os.environ['GITHUB_OUTPUT']
+          with open(output_path, 'a', encoding='utf-8') as out:
+              if not archive:
+                  out.write('has_archive=false\n')
+                  out.write('archive_count=0\n')
+                  print('No traces to archive.')
+              else:
+                  ids = [n for n, _ in archive]
+                  min_id = min(ids)
+                  max_id = max(ids)
+                  tar_name = f'traces-{min_id}-{max_id}.tar.gz'
+                  tar_path = f'/tmp/{tar_name}'
+                  out.write('has_archive=true\n')
+                  out.write(f'archive_count={len(archive)}\n')
+                  out.write(f'min_id={min_id}\n')
+                  out.write(f'max_id={max_id}\n')
+                  out.write(f'tar_path={tar_path}\n')
+                  with open('/tmp/archive-files.txt', 'w', encoding='utf-8') as f:
+                      for _, path in archive:
+                          f.write(path + '\n')
+                  print(f'Selected {len(archive)} traces for archive: {min_id}-{max_id}.')
+          PYEOF
+
+      - name: Build archive tarball
+        if: steps.select.outputs.has_archive == 'true'
+        run: |
+          tar -czf "${{ steps.select.outputs.tar_path }}" -T /tmp/archive-files.txt
+
+      - name: Create archive release tag
+        if: steps.select.outputs.has_archive == 'true'
+        id: tag
+        run: |
+          echo "value=archive/$(date -u +%Y%m%dT%H%M%SZ)" >> "$GITHUB_OUTPUT"
+
+      - name: Publish archive release
+        if: steps.select.outputs.has_archive == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.tag.outputs.value }}" "${{ steps.select.outputs.tar_path }}" \
+            --title "Trace archive ${{ steps.select.outputs.min_id }}-${{ steps.select.outputs.max_id }}" \
+            --notes "Archived ${{ steps.select.outputs.archive_count }} trace files from traces/."
+
+      - name: Remove archived files from active tree
+        if: steps.select.outputs.has_archive == 'true'
+        run: |
+          xargs -a /tmp/archive-files.txt rm -f
+
+      - name: Compact history and force-push main
+        if: steps.select.outputs.has_archive == 'true'
+        run: |
+          set -euo pipefail
+          start_sha="$(git rev-parse HEAD)"
+          git fetch origin main --no-tags
+          remote_sha="$(git rev-parse FETCH_HEAD)"
+          if [ "$remote_sha" != "$start_sha" ]; then
+            echo "::error::origin/main changed during archival (start=$start_sha, current=$remote_sha). Aborting."
+            exit 1
+          fi
+
+          git checkout --orphan compacted-main
+          git add -A
+          git commit -m "Archive traces ${{ steps.select.outputs.min_id }}-${{ steps.select.outputs.max_id }} and compact history"
+          git branch -M main
+          git push --force-with-lease=main:$start_sha origin main
