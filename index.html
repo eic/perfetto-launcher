@@ -5,26 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfetto Trace Launcher</title>
   <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 4em auto; padding: 1em; }
+    body { font-family: sans-serif; max-width: 700px; margin: 4em auto; padding: 1em; }
     h1 { font-size: 1.5em; }
     #status { font-size: 1.1em; margin: 1em 0; }
     .error { color: #c00; }
     .ok { color: #060; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+    th, td { text-align: left; padding: 0.4em 0.7em; border-bottom: 1px solid #ddd; }
+    th { background: #f5f5f5; font-weight: 600; }
+    a { color: #0969da; }
+    tr:hover td { background: #f8f8f8; }
   </style>
 </head>
 <body>
   <h1>EIC Perfetto Trace Launcher</h1>
   <p id="status">Initializing&hellip;</p>
+  <div id="listing" hidden></div>
   <script>
   (async () => {
     const status = document.getElementById('status');
+    const listing = document.getElementById('listing');
     const params = new URLSearchParams(location.search);
     const trace = params.get('trace');
+
     if (!trace) {
-      status.textContent = 'No trace specified. Add ?trace=<path> to the URL.';
-      status.className = 'error';
+      // Show listing of recent traces from traces/index.json
+      try {
+        status.textContent = 'Loading trace index\u2026';
+        const resp = await fetch('traces/index.json');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const data = await resp.json();
+        const traces = (data.traces || []).slice(0, 10);
+        if (traces.length === 0) {
+          status.textContent = 'No traces uploaded yet.';
+          return;
+        }
+        status.textContent = 'Recent pipeline traces \u2014 click to open in Perfetto:';
+        const table = document.createElement('table');
+        table.innerHTML = '<thead><tr><th>Pipeline</th><th>Uploaded (local time)</th></tr></thead>';
+        const tbody = document.createElement('tbody');
+        for (const t of traces) {
+          const tr = document.createElement('tr');
+          const url = '?trace=' + encodeURIComponent(t.path);
+          const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
+          const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
+          tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>'
+                       + '<td>' + date + '</td>';
+          tbody.appendChild(tr);
+        }
+        table.appendChild(tbody);
+        listing.appendChild(table);
+        listing.hidden = false;
+      } catch (err) {
+        status.textContent = 'Error loading index: ' + err.message;
+        status.className = 'error';
+      }
       return;
     }
+
+    // Launch a specific trace in Perfetto via postMessage
     try {
       status.textContent = 'Fetching ' + trace + '\u2026';
       const resp = await fetch(trace);
