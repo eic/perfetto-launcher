@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfetto Trace Launcher</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 4em auto; padding: 1em; }
+    h1 { font-size: 1.5em; }
+    #status { font-size: 1.1em; margin: 1em 0; }
+    .error { color: #c00; }
+    .ok { color: #060; }
+  </style>
+</head>
+<body>
+  <h1>EIC Perfetto Trace Launcher</h1>
+  <p id="status">Initializing&hellip;</p>
+  <script>
+  (async () => {
+    const status = document.getElementById('status');
+    const params = new URLSearchParams(location.search);
+    const trace = params.get('trace');
+    if (!trace) {
+      status.textContent = 'No trace specified. Add ?trace=<path> to the URL.';
+      status.className = 'error';
+      return;
+    }
+    try {
+      status.textContent = 'Fetching ' + trace + '\u2026';
+      const resp = await fetch(trace);
+      if (!resp.ok) throw new Error('HTTP ' + resp.status + ' fetching ' + trace);
+      const buffer = await resp.arrayBuffer();
+      status.textContent = 'Opening Perfetto UI\u2026 (allow popups if prompted)';
+      const win = window.open('https://ui.perfetto.dev');
+      if (!win) {
+        status.textContent = 'Popup was blocked. Allow popups for this site, then reload.';
+        status.className = 'error';
+        return;
+      }
+      const timer = setInterval(() => win.postMessage('PING', 'https://ui.perfetto.dev'), 50);
+      window.addEventListener('message', (e) => {
+        if (e.source !== win || e.data !== 'PONG') return;
+        clearInterval(timer);
+        win.postMessage(
+          { perfetto: { buffer, title: trace, fileName: trace.split('/').pop() } },
+          'https://ui.perfetto.dev'
+        );
+        status.textContent = 'Trace sent to Perfetto UI \u2014 check the new tab.';
+        status.className = 'ok';
+      });
+    } catch (err) {
+      status.textContent = 'Error: ' + err.message;
+      status.className = 'error';
+    }
+  })();
+  </script>
+</body>
+</html>
