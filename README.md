@@ -39,8 +39,13 @@ https://eic.github.io/perfetto-launcher/?trace=traces/trace-143108.json
 
 ## Trace index
 
-`traces/index.json` is updated automatically on every upload and drives
-the default listing page.  Its format is intentionally extensible:
+`traces/index.json` is **not stored in this repository**.  It is generated
+automatically by the [Deploy to GitHub Pages](.github/workflows/deploy.yml)
+workflow whenever a new trace is pushed to `main`.  The workflow reads git
+history to recover each trace file's commit timestamp and pipeline ID, then
+writes `traces/index.json` into the deployment artifact.
+
+The format is intentionally extensible:
 
 ```json
 {
@@ -55,14 +60,17 @@ the default listing page.  Its format is intentionally extensible:
 ```
 
 Additional metadata fields (e.g. a backlink to the eicweb GitLab pipeline)
-can be added to each entry without breaking existing consumers.
+can be added to commit messages and extracted by the generation script
+without breaking existing consumers.
 
 ## Uploading traces
 
 Traces are uploaded by [`waterfall-eicweb.sh`](https://github.com/eic/snippets/blob/main/waterfall-eicweb.sh)
 from [eic/snippets](https://github.com/eic/snippets) using the GitHub
-Contents API.  A `GITHUB_PAGES_TOKEN` with `contents:write` permission on
-this repository is required.
+Contents API.  Uploading a trace commits it to `main`, which automatically
+triggers the deploy workflow to regenerate the index and redeploy the site.
+A `GITHUB_PAGES_TOKEN` with `contents:write` permission on this repository
+is required.
 
 ```sh
 # Upload the trace for EIC pipeline 143108 in project 290
@@ -76,8 +84,8 @@ using the `EIC_PERFETTO_LAUNCHER_GITHUB_PAGES_TOKEN` CI/CD variable.
 ## Repository layout
 
 ```
-index.html          # Launcher / listing page (GitHub Pages entry point)
+.github/workflows/deploy.yml   # Builds site + generates traces/index.json
+index.html                     # Launcher / listing page (GitHub Pages entry point)
 traces/
-  index.json        # Metadata index of uploaded traces (latest first)
-  trace-<id>.json   # Perfetto JSON trace files
+  trace-<id>.json              # Perfetto JSON trace files
 ```
