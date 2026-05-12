@@ -22,8 +22,8 @@ link.  Instead, this site acts as an intermediary:
 
 ### Browse recent traces
 
-Visit the root URL to see the 10 most recent uploaded traces with their
-upload timestamps.  Click any row to open the trace in Perfetto UI.
+Visit the root URL to see the 10 most recent traces by pipeline ID
+(`trace-<id>.json`). Click any row to open the trace in Perfetto UI.
 
 ```
 https://eic.github.io/perfetto-launcher/
@@ -39,11 +39,11 @@ https://eic.github.io/perfetto-launcher/?trace=traces/trace-143108.json
 
 ## Trace index
 
-`traces/index.json` is **not stored in this repository**.  It is generated
+`traces/index.json` is **not stored in this repository**. It is generated
 automatically by the [Deploy to GitHub Pages](.github/workflows/deploy.yml)
-workflow whenever a new trace is pushed to `main`.  The workflow reads git
-history to recover each trace file's commit timestamp and pipeline ID, then
-writes `traces/index.json` into the deployment artifact.
+workflow whenever a new trace is pushed to `main`. The workflow scans
+`traces/trace-<id>.json`, sorts by numeric `<id>` descending, and writes the
+top entries into `traces/index.json` in the deployment artifact.
 
 The format is intentionally extensible:
 
@@ -52,16 +52,37 @@ The format is intentionally extensible:
   "traces": [
     {
       "path": "traces/trace-143108.json",
-      "uploaded_at": "2026-05-10T17:45:00Z",
       "pipeline_id": "143108"
     }
   ]
 }
 ```
 
-Additional metadata fields (e.g. a backlink to the eicweb GitLab pipeline)
-can be added to commit messages and extracted by the generation script
-without breaking existing consumers.
+### Retention and archive policy
+
+The active repository keeps only the newest 1000 trace files
+(`traces/trace-<id>.json` by numeric ID). Older traces are archived to GitHub
+Releases by the [Archive and compact trace history](.github/workflows/archive-and-compact.yml)
+workflow (scheduled monthly, and runnable manually).
+
+When archival runs:
+
+1. Older traces are bundled as `traces-<minID>-<maxID>.tar.gz`.
+2. The tarball is published as a release asset under a tag like
+   `archive/<timestamp>`.
+3. Archived traces are removed from the active tree.
+4. `main` is compacted to a fresh single-commit history and force-pushed.
+
+Compaction is aborted if release upload fails, and also aborted if `origin/main`
+changes while the workflow is running.
+
+### Recovery
+
+To recover archived traces, download the desired release asset and extract:
+
+```sh
+tar -xzf traces-<minID>-<maxID>.tar.gz
+```
 
 ## Uploading traces
 
@@ -85,6 +106,7 @@ using the `EIC_PERFETTO_LAUNCHER_GITHUB_PAGES_TOKEN` CI/CD variable.
 
 ```
 .github/workflows/deploy.yml   # Builds site + generates traces/index.json
+.github/workflows/archive-and-compact.yml  # Archives old traces and compacts main history
 index.html                     # Launcher / listing page (GitHub Pages entry point)
 traces/
   trace-<id>.json              # Perfetto JSON trace files
