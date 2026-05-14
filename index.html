@@ -108,7 +108,7 @@
         points.push({ t: end, d: -1 });
       }
 
-      points.sort((a, b) => (a.t - b.t) || (a.d - b.d));
+      points.sort((a, b) => (a.t !== b.t ? (a.t - b.t) : (a.d - b.d)));
       let running = 0;
       let blockedOrQueued = 0;
       let prev = points[0].t;
