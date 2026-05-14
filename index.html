@@ -48,8 +48,8 @@
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
-          const pipelineId = String(t.pipeline_id || '').trim();
-          const safePipelineId = /^\d+$/.test(pipelineId) ? pipelineId : '';
+          const pipelineId = t.pipeline_id ? String(t.pipeline_id).trim() : null;
+          const safePipelineId = pipelineId && /^\d+$/.test(pipelineId) ? pipelineId : null;
           const eicwebUrl = safePipelineId
             ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + safePipelineId
             : null;
@@ -68,6 +68,7 @@
             eicwebLink.target = '_blank';
             eicwebLink.rel = 'noopener noreferrer';
             eicwebLink.textContent = 'Pipeline ' + safePipelineId;
+            eicwebLink.setAttribute('aria-label', 'View pipeline ' + safePipelineId + ' on EICWeb');
             eicwebCell.appendChild(eicwebLink);
           } else {
             eicwebCell.textContent = '—';
