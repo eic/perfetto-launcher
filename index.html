@@ -139,7 +139,7 @@
         }
         status.textContent = 'Recent pipeline traces \u2014 click to open in Perfetto:';
         const table = document.createElement('table');
-        table.innerHTML = '<thead><tr><th>Pipeline</th><th>Uploaded (local time)</th><th>Performance summary</th><th>Utilization (wall/core)</th><th>Blocked/queued (\u22641 running)</th></tr></thead>';
+        table.innerHTML = '<thead><tr><th>Pipeline</th><th>EICWeb</th><th>Uploaded (local time)</th><th>Performance summary</th><th>Utilization (wall/core)</th><th>Blocked/queued (\u22641 running)</th></tr></thead>';
         const tbody = document.createElement('tbody');
         const analyses = await Promise.all(traces.map(async (t) => {
           try {
@@ -158,6 +158,11 @@
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
+          const pipelineId = t.pipeline_id ? String(t.pipeline_id).trim() : null;
+          const safePipelineId = pipelineId && /^\d+$/.test(pipelineId) ? pipelineId : null;
+          const eicwebUrl = safePipelineId
+            ? 'https://eicweb.phy.anl.gov/containers/eic_container/-/pipelines/' + safePipelineId
+            : null;
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
           const summary = analysis
             ? `${formatCoreTime(analysis.coreTime)} in ${formatDuration(analysis.wallTime)}`
@@ -168,11 +173,44 @@
             ? `${analysis.wallOverCore.toFixed(2)} (avg ${analysis.avgConcurrentJobs.toFixed(2)} jobs)`
             : 'n/a';
           const blocked = analysis ? formatDuration(analysis.blockedOrQueued) : 'n/a';
-          tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>'
-                       + '<td>' + date + '</td>'
-                       + '<td>' + summary + '</td>'
-                       + '<td>' + utilization + '</td>'
-                       + '<td>' + blocked + '</td>';
+
+          const pipelineCell = document.createElement('td');
+          const pipelineLink = document.createElement('a');
+          pipelineLink.href = url;
+          pipelineLink.textContent = label;
+          pipelineCell.appendChild(pipelineLink);
+
+          const eicwebCell = document.createElement('td');
+          if (eicwebUrl) {
+            const eicwebLink = document.createElement('a');
+            eicwebLink.href = eicwebUrl;
+            eicwebLink.target = '_blank';
+            eicwebLink.rel = 'noopener noreferrer';
+            eicwebLink.textContent = 'Pipeline ' + safePipelineId;
+            eicwebLink.setAttribute('aria-label', 'View pipeline ' + safePipelineId + ' on EICWeb');
+            eicwebCell.appendChild(eicwebLink);
+          } else {
+            eicwebCell.textContent = '—';
+          }
+
+          const dateCell = document.createElement('td');
+          dateCell.textContent = date;
+
+          const summaryCell = document.createElement('td');
+          summaryCell.textContent = summary;
+
+          const utilizationCell = document.createElement('td');
+          utilizationCell.textContent = utilization;
+
+          const blockedCell = document.createElement('td');
+          blockedCell.textContent = blocked;
+
+          tr.appendChild(pipelineCell);
+          tr.appendChild(eicwebCell);
+          tr.appendChild(dateCell);
+          tr.appendChild(summaryCell);
+          tr.appendChild(utilizationCell);
+          tr.appendChild(blockedCell);
           tbody.appendChild(tr);
         }
         table.appendChild(tbody);
