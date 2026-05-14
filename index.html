@@ -51,13 +51,32 @@
           const eicwebUrl = t.pipeline_id
             ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + encodeURIComponent(t.pipeline_id)
             : null;
-          const eicwebLink = eicwebUrl
-            ? '<a href="' + eicwebUrl + '" target="_blank" rel="noopener noreferrer">pipeline</a>'
-            : '—';
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
-          tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>'
-                       + '<td>' + eicwebLink + '</td>'
-                       + '<td>' + date + '</td>';
+
+          const pipelineCell = document.createElement('td');
+          const pipelineLink = document.createElement('a');
+          pipelineLink.href = url;
+          pipelineLink.textContent = label;
+          pipelineCell.appendChild(pipelineLink);
+
+          const eicwebCell = document.createElement('td');
+          if (eicwebUrl) {
+            const eicwebLink = document.createElement('a');
+            eicwebLink.href = eicwebUrl;
+            eicwebLink.target = '_blank';
+            eicwebLink.rel = 'noopener noreferrer';
+            eicwebLink.textContent = 'pipeline';
+            eicwebCell.appendChild(eicwebLink);
+          } else {
+            eicwebCell.textContent = '—';
+          }
+
+          const dateCell = document.createElement('td');
+          dateCell.textContent = date;
+
+          tr.appendChild(pipelineCell);
+          tr.appendChild(eicwebCell);
+          tr.appendChild(dateCell);
           tbody.appendChild(tr);
         }
         table.appendChild(tbody);
