@@ -42,14 +42,21 @@
         }
         status.textContent = 'Recent pipeline traces \u2014 click to open in Perfetto:';
         const table = document.createElement('table');
-        table.innerHTML = '<thead><tr><th>Pipeline</th><th>Uploaded (local time)</th></tr></thead>';
+        table.innerHTML = '<thead><tr><th>Pipeline</th><th>EICWeb</th><th>Uploaded (local time)</th></tr></thead>';
         const tbody = document.createElement('tbody');
         for (const t of traces) {
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
+          const eicwebUrl = t.pipeline_id
+            ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + encodeURIComponent(t.pipeline_id)
+            : null;
+          const eicwebLink = eicwebUrl
+            ? '<a href="' + eicwebUrl + '" target="_blank" rel="noopener noreferrer">pipeline</a>'
+            : '—';
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
           tr.innerHTML = '<td><a href="' + url + '">' + label + '</a></td>'
+                       + '<td>' + eicwebLink + '</td>'
                        + '<td>' + date + '</td>';
           tbody.appendChild(tr);
         }
