@@ -162,7 +162,9 @@
           const summary = analysis
             ? `${formatCoreTime(analysis.coreTime)} in ${formatDuration(analysis.wallTime)}`
             : 'n/a';
-          const utilization = analysis && analysis.wallOverCore && analysis.avgConcurrentJobs
+          const utilization = analysis
+            && analysis.wallOverCore !== null
+            && analysis.avgConcurrentJobs !== null
             ? `${analysis.wallOverCore.toFixed(2)} (avg ${analysis.avgConcurrentJobs.toFixed(2)} jobs)`
             : 'n/a';
           const blocked = analysis ? formatDuration(analysis.blockedOrQueued) : 'n/a';
