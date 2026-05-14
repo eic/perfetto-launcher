@@ -48,8 +48,10 @@
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
-          const eicwebUrl = t.pipeline_id
-            ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + encodeURIComponent(t.pipeline_id)
+          const pipelineId = String(t.pipeline_id || '').trim();
+          const safePipelineId = /^\d+$/.test(pipelineId) ? pipelineId : '';
+          const eicwebUrl = safePipelineId
+            ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + safePipelineId
             : null;
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
 
