@@ -51,7 +51,7 @@
           const pipelineId = t.pipeline_id ? String(t.pipeline_id).trim() : null;
           const safePipelineId = pipelineId && /^\d+$/.test(pipelineId) ? pipelineId : null;
           const eicwebUrl = safePipelineId
-            ? 'https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks/-/pipelines/' + safePipelineId
+            ? 'https://eicweb.phy.anl.gov/containers/eic_container/-/pipelines/' + safePipelineId
             : null;
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
 
