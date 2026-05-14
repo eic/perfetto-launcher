@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfetto Trace Launcher</title>
   <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 4em auto; padding: 1em; }
+    body { font-family: sans-serif; max-width: 1100px; margin: 4em auto; padding: 1em; }
     h1 { font-size: 1.5em; }
     #status { font-size: 1.1em; margin: 1em 0; }
     .error { color: #c00; }
@@ -27,6 +27,103 @@
     const listing = document.getElementById('listing');
     const params = new URLSearchParams(location.search);
     const trace = params.get('trace');
+    const US_PER_SECOND = 1_000_000;
+    const US_PER_MINUTE = 60 * US_PER_SECOND;
+    const US_PER_HOUR = 60 * US_PER_MINUTE;
+
+    function formatDuration(us) {
+      if (!Number.isFinite(us) || us <= 0) return '0s';
+      const totalSeconds = Math.round(us / US_PER_SECOND);
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      if (hours > 0) {
+        if (minutes > 0) return `${hours}h${minutes}m`;
+        return seconds > 0 ? `${hours}h${seconds}s` : `${hours}h`;
+      }
+      if (minutes > 0) return seconds > 0 ? `${minutes}m${seconds}s` : `${minutes}m`;
+      return `${seconds}s`;
+    }
+
+    function formatCoreTime(us) {
+      if (!Number.isFinite(us) || us <= 0) return '0 core-hours';
+      const coreHours = us / US_PER_HOUR;
+      if (coreHours >= 1) return `${coreHours.toFixed(coreHours >= 100 ? 0 : 1)} core-hours`;
+      const coreMinutes = us / US_PER_MINUTE;
+      return `${coreMinutes.toFixed(coreMinutes >= 10 ? 0 : 1)} core-minutes`;
+    }
+
+    function buildIntervals(events) {
+      const intervals = [];
+      const beginStacks = new Map();
+
+      for (const e of events || []) {
+        if (!e || typeof e !== 'object' || typeof e.name !== 'string') continue;
+        if (e.name.startsWith('status:')) continue;
+        if (!Number.isFinite(e.ts)) continue;
+
+        if (e.ph === 'X' && Number.isFinite(e.dur) && e.dur >= 0) {
+          const start = e.ts;
+          const end = e.ts + e.dur;
+          if (end >= start) intervals.push([start, end]);
+          continue;
+        }
+
+        if (e.ph === 'B') {
+          const key = `${e.pid ?? ''}:${e.tid ?? ''}:${e.name}`;
+          if (!beginStacks.has(key)) beginStacks.set(key, []);
+          beginStacks.get(key).push(e.ts);
+          continue;
+        }
+
+        if (e.ph === 'E') {
+          const key = `${e.pid ?? ''}:${e.tid ?? ''}:${e.name}`;
+          const stack = beginStacks.get(key);
+          if (!stack || stack.length === 0) continue;
+          const start = stack.pop();
+          if (e.ts >= start) intervals.push([start, e.ts]);
+        }
+      }
+      return intervals;
+    }
+
+    function analyzeTrace(traceData) {
+      const events = Array.isArray(traceData)
+        ? traceData
+        : Array.isArray(traceData?.traceEvents)
+          ? traceData.traceEvents
+          : [];
+      const intervals = buildIntervals(events);
+      if (intervals.length === 0) return null;
+
+      let earliest = Infinity;
+      let latest = -Infinity;
+      let coreTime = 0;
+      const points = [];
+      for (const [start, end] of intervals) {
+        if (start < earliest) earliest = start;
+        if (end > latest) latest = end;
+        coreTime += (end - start);
+        points.push({ t: start, d: 1 });
+        points.push({ t: end, d: -1 });
+      }
+
+      points.sort((a, b) => (a.t !== b.t ? (a.t - b.t) : (a.d - b.d)));
+      let running = 0;
+      let blockedOrQueued = 0;
+      let prev = points[0].t;
+      for (const p of points) {
+        const dt = p.t - prev;
+        if (dt > 0 && running <= 1) blockedOrQueued += dt;
+        running += p.d;
+        prev = p.t;
+      }
+
+      const wallTime = Math.max(0, latest - earliest);
+      const wallOverCore = coreTime > 0 ? (wallTime / coreTime) : null;
+      const avgConcurrentJobs = wallTime > 0 ? (coreTime / wallTime) : null;
+      return { wallTime, coreTime, wallOverCore, avgConcurrentJobs, blockedOrQueued };
+    }
 
     if (!trace) {
       // Show listing of recent traces from traces/index.json
@@ -42,9 +139,22 @@
         }
         status.textContent = 'Recent pipeline traces \u2014 click to open in Perfetto:';
         const table = document.createElement('table');
-        table.innerHTML = '<thead><tr><th>Pipeline</th><th>EICWeb</th><th>Uploaded (local time)</th></tr></thead>';
+        table.innerHTML = '<thead><tr><th>Pipeline</th><th>EICWeb</th><th>Uploaded (local time)</th><th>Performance summary</th><th>Utilization (wall/core)</th><th>Blocked/queued (\u22641 running)</th></tr></thead>';
         const tbody = document.createElement('tbody');
-        for (const t of traces) {
+        const analyses = await Promise.all(traces.map(async (t) => {
+          try {
+            const traceResp = await fetch(t.path);
+            if (!traceResp.ok) throw new Error('HTTP ' + traceResp.status);
+            const traceData = await traceResp.json();
+            return analyzeTrace(traceData);
+          } catch (_) {
+            return null;
+          }
+        }));
+
+        for (let i = 0; i < traces.length; i++) {
+          const t = traces[i];
+          const analysis = analyses[i];
           const tr = document.createElement('tr');
           const url = '?trace=' + encodeURIComponent(t.path);
           const label = t.pipeline_id || t.path.split('/').pop().replace('.json', '');
@@ -54,6 +164,15 @@
             ? 'https://eicweb.phy.anl.gov/containers/eic_container/-/pipelines/' + safePipelineId
             : null;
           const date = t.uploaded_at ? new Date(t.uploaded_at).toLocaleString() : 'unknown';
+          const summary = analysis
+            ? `${formatCoreTime(analysis.coreTime)} in ${formatDuration(analysis.wallTime)}`
+            : 'n/a';
+          const utilization = analysis
+            && analysis.wallOverCore !== null
+            && analysis.avgConcurrentJobs !== null
+            ? `${analysis.wallOverCore.toFixed(2)} (avg ${analysis.avgConcurrentJobs.toFixed(2)} jobs)`
+            : 'n/a';
+          const blocked = analysis ? formatDuration(analysis.blockedOrQueued) : 'n/a';
 
           const pipelineCell = document.createElement('td');
           const pipelineLink = document.createElement('a');
@@ -77,9 +196,21 @@
           const dateCell = document.createElement('td');
           dateCell.textContent = date;
 
+          const summaryCell = document.createElement('td');
+          summaryCell.textContent = summary;
+
+          const utilizationCell = document.createElement('td');
+          utilizationCell.textContent = utilization;
+
+          const blockedCell = document.createElement('td');
+          blockedCell.textContent = blocked;
+
           tr.appendChild(pipelineCell);
           tr.appendChild(eicwebCell);
           tr.appendChild(dateCell);
+          tr.appendChild(summaryCell);
+          tr.appendChild(utilizationCell);
+          tr.appendChild(blockedCell);
           tbody.appendChild(tr);
         }
         table.appendChild(tbody);
