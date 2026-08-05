@@ -1,0 +1,5506 @@
+[
+  {
+    "name": "clean_pipeline:docker-new",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246739,
+    "ts": 1785959984000000
+  },
+  {
+    "name": "clean_pipeline:docker-new",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246739,
+    "ts": 1785960055000000
+  },
+  {
+    "name": "clean_pipeline:gpu",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246738,
+    "ts": 1785959984000000
+  },
+  {
+    "name": "clean_pipeline:gpu",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246738,
+    "ts": 1785959986000000
+  },
+  {
+    "name": "clean_unstable_mr:docker-new",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246737,
+    "ts": 1785959984000000
+  },
+  {
+    "name": "clean_unstable_mr:docker-new",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246737,
+    "ts": 1785960036000000
+  },
+  {
+    "name": "clean_unstable_mr:gpu",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246736,
+    "ts": 1785959984000000
+  },
+  {
+    "name": "clean_unstable_mr:gpu",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246736,
+    "ts": 1785959986000000
+  },
+  {
+    "name": "eic-manifest",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246732,
+    "ts": 1785955648000000
+  },
+  {
+    "name": "eic-manifest",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246732,
+    "ts": 1785955663000000
+  },
+  {
+    "name": "eic: [eic_, ci, default,nightly, debian_stable_base, debian_stable_base, linux/amd64]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246731,
+    "ts": 1785953964000000
+  },
+  {
+    "name": "eic: [eic_, ci, default,nightly, debian_stable_base, debian_stable_base, linux/amd64]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246731,
+    "ts": 1785955647000000
+  },
+  {
+    "name": "base-manifest",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246730,
+    "ts": 1785953948000000
+  },
+  {
+    "name": "base-manifest",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246730,
+    "ts": 1785953963000000
+  },
+  {
+    "name": "base: [nvidia/cuda:${CUDA_VERSION}-runtime-${CUDA_OS}, cuda_runtime, linux/amd64]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246729,
+    "ts": 1785952711000000
+  },
+  {
+    "name": "base: [nvidia/cuda:${CUDA_VERSION}-runtime-${CUDA_OS}, cuda_runtime, linux/amd64]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246729,
+    "ts": 1785953944000000
+  },
+  {
+    "name": "base: [nvidia/cuda:${CUDA_VERSION}-devel-${CUDA_OS}, cuda_devel, linux/amd64]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246728,
+    "ts": 1785952432000000
+  },
+  {
+    "name": "base: [nvidia/cuda:${CUDA_VERSION}-devel-${CUDA_OS}, cuda_devel, linux/amd64]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246728,
+    "ts": 1785953942000000
+  },
+  {
+    "name": "base: [debian:trixie-slim, debian_stable_base, linux/amd64]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246727,
+    "ts": 1785952432000000
+  },
+  {
+    "name": "base: [debian:trixie-slim, debian_stable_base, linux/amd64]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246727,
+    "ts": 1785952712000000
+  },
+  {
+    "name": "version",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246723,
+    "ts": 1785952417000000
+  },
+  {
+    "name": "version",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246723,
+    "ts": 1785952429000000
+  },
+  {
+    "name": "nvidia-smi",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246722,
+    "ts": 1785952417000000
+  },
+  {
+    "name": "nvidia-smi",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246722,
+    "ts": 1785952419000000
+  },
+  {
+    "name": "status:pending",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147320,
+    "tid": 8246721,
+    "ts": 1785952405000000
+  },
+  {
+    "name": "status:pending",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147320,
+    "tid": 8246721,
+    "ts": 1785952416000000
+  },
+  {
+    "name": "benchmarks:detector:failure",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247169,
+    "ts": 1785959968000000
+  },
+  {
+    "name": "benchmarks:detector:failure",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247169,
+    "ts": 1785959979000000
+  },
+  {
+    "name": "collect_results:nhcal_pion_rejection",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247166,
+    "ts": 1785957740000000
+  },
+  {
+    "name": "collect_results:nhcal_pion_rejection",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247166,
+    "ts": 1785958163000000
+  },
+  {
+    "name": "collect_results:nhcal_dimuon_photoproduction",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247165,
+    "ts": 1785957722000000
+  },
+  {
+    "name": "collect_results:nhcal_dimuon_photoproduction",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247165,
+    "ts": 1785958154000000
+  },
+  {
+    "name": "collect_results:nhcal_sampling_fraction",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247164,
+    "ts": 1785957863000000
+  },
+  {
+    "name": "collect_results:nhcal_sampling_fraction",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247164,
+    "ts": 1785958256000000
+  },
+  {
+    "name": "collect_results:nhcal_basic_distribution: [epic_full]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247163,
+    "ts": 1785957821000000
+  },
+  {
+    "name": "collect_results:nhcal_basic_distribution: [epic_full]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247163,
+    "ts": 1785958227000000
+  },
+  {
+    "name": "collect_results:nhcal_basic_distribution: [epic_backward_hcal_only]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247162,
+    "ts": 1785957812000000
+  },
+  {
+    "name": "collect_results:nhcal_basic_distribution: [epic_backward_hcal_only]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247162,
+    "ts": 1785958224000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247161,
+    "ts": 1785957503000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247161,
+    "ts": 1785957973000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247160,
+    "ts": 1785957500000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247160,
+    "ts": 1785957969000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247159,
+    "ts": 1785957500000000
+  },
+  {
+    "name": "collect_results:nhcal_acceptance: [1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247159,
+    "ts": 1785957968000000
+  },
+  {
+    "name": "collect_results:femc_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247158,
+    "ts": 1785957629000000
+  },
+  {
+    "name": "collect_results:femc_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247158,
+    "ts": 1785958074000000
+  },
+  {
+    "name": "collect_results:femc_photon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247157,
+    "ts": 1785957542000000
+  },
+  {
+    "name": "collect_results:femc_photon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247157,
+    "ts": 1785958015000000
+  },
+  {
+    "name": "collect_results:femc_electron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247156,
+    "ts": 1785957528000000
+  },
+  {
+    "name": "collect_results:femc_electron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247156,
+    "ts": 1785957998000000
+  },
+  {
+    "name": "collect_results:insert_neutron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247155,
+    "ts": 1785957678000000
+  },
+  {
+    "name": "collect_results:insert_neutron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247155,
+    "ts": 1785958116000000
+  },
+  {
+    "name": "collect_results:zdc_lambda",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247154,
+    "ts": 1785957524000000
+  },
+  {
+    "name": "collect_results:zdc_lambda",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247154,
+    "ts": 1785957991000000
+  },
+  {
+    "name": "collect_results:zdc_sigma",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247153,
+    "ts": 1785957569000000
+  },
+  {
+    "name": "collect_results:zdc_sigma",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247153,
+    "ts": 1785958024000000
+  },
+  {
+    "name": "collect_results:insert_tau",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247152,
+    "ts": 1785958797000000
+  },
+  {
+    "name": "collect_results:insert_tau",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247152,
+    "ts": 1785958963000000
+  },
+  {
+    "name": "collect_results:insert_muon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247151,
+    "ts": 1785957515000000
+  },
+  {
+    "name": "collect_results:insert_muon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247151,
+    "ts": 1785957983000000
+  },
+  {
+    "name": "results:b0_tracker",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247150,
+    "ts": 1785957470000000
+  },
+  {
+    "name": "results:b0_tracker",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247150,
+    "ts": 1785957926000000
+  },
+  {
+    "name": "collect_results:rich",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247149,
+    "ts": 1785957917000000
+  },
+  {
+    "name": "collect_results:rich",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247149,
+    "ts": 1785958290000000
+  },
+  {
+    "name": "collect_results:pid",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247148,
+    "ts": 1785957013000000
+  },
+  {
+    "name": "collect_results:pid",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247148,
+    "ts": 1785957468000000
+  },
+  {
+    "name": "collect_results:material_scan",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247147,
+    "ts": 1785957509000000
+  },
+  {
+    "name": "collect_results:material_scan",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247147,
+    "ts": 1785957972000000
+  },
+  {
+    "name": "collect_results:zdc_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247146,
+    "ts": 1785957488000000
+  },
+  {
+    "name": "collect_results:zdc_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247146,
+    "ts": 1785957963000000
+  },
+  {
+    "name": "collect_results:zdc_photon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247145,
+    "ts": 1785957482000000
+  },
+  {
+    "name": "collect_results:zdc_photon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247145,
+    "ts": 1785957949000000
+  },
+  {
+    "name": "collect_results:zdc_neutron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247144,
+    "ts": 1785957467000000
+  },
+  {
+    "name": "collect_results:zdc_neutron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247144,
+    "ts": 1785957936000000
+  },
+  {
+    "name": "collect_results:zdc_lyso",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247143,
+    "ts": 1785957012000000
+  },
+  {
+    "name": "collect_results:zdc_lyso",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247143,
+    "ts": 1785957478000000
+  },
+  {
+    "name": "collect_results:zdc",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247142,
+    "ts": 1785957482000000
+  },
+  {
+    "name": "collect_results:zdc",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247142,
+    "ts": 1785957943000000
+  },
+  {
+    "name": "collect_results:lfhcal_campaigns",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247141,
+    "ts": 1785959944000000
+  },
+  {
+    "name": "collect_results:lfhcal_campaigns",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247141,
+    "ts": 1785959967000000
+  },
+  {
+    "name": "collect_results:lfhcal",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247140,
+    "ts": 1785958902000000
+  },
+  {
+    "name": "collect_results:lfhcal",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247140,
+    "ts": 1785959014000000
+  },
+  {
+    "name": "collect_results:barrel_ecal",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247139,
+    "ts": 1785957770000000
+  },
+  {
+    "name": "collect_results:barrel_ecal",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247139,
+    "ts": 1785958175000000
+  },
+  {
+    "name": "collect_results:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247132,
+    "ts": 1785957323000000
+  },
+  {
+    "name": "collect_results:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247132,
+    "ts": 1785957772000000
+  },
+  {
+    "name": "collect_results:ecal_gaps",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247131,
+    "ts": 1785957274000000
+  },
+  {
+    "name": "collect_results:ecal_gaps",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247131,
+    "ts": 1785957728000000
+  },
+  {
+    "name": "collect_results:calo_pid",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247129,
+    "ts": 1785957404000000
+  },
+  {
+    "name": "collect_results:calo_pid",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247129,
+    "ts": 1785957856000000
+  },
+  {
+    "name": "collect_results:beamline",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247128,
+    "ts": 1785957293000000
+  },
+  {
+    "name": "collect_results:beamline",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247128,
+    "ts": 1785957739000000
+  },
+  {
+    "name": "collect_results:backwards_ecal",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247127,
+    "ts": 1785957630000000
+  },
+  {
+    "name": "collect_results:backwards_ecal",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247127,
+    "ts": 1785958077000000
+  },
+  {
+    "name": "bench:nhcal_pion_rejection_analysis",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247125,
+    "ts": 1785957172000000
+  },
+  {
+    "name": "bench:nhcal_pion_rejection_analysis",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247125,
+    "ts": 1785957739000000
+  },
+  {
+    "name": "bench:nhcal_dimuon_photoproduction_analysis",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247124,
+    "ts": 1785957143000000
+  },
+  {
+    "name": "bench:nhcal_dimuon_photoproduction_analysis",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247124,
+    "ts": 1785957721000000
+  },
+  {
+    "name": "bench:nhcal_sampling_fraction",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247123,
+    "ts": 1785957067000000
+  },
+  {
+    "name": "bench:nhcal_sampling_fraction",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247123,
+    "ts": 1785957860000000
+  },
+  {
+    "name": "bench:nhcal_basic_distribution_analysis_full",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247122,
+    "ts": 1785957029000000
+  },
+  {
+    "name": "bench:nhcal_basic_distribution_analysis_full",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247122,
+    "ts": 1785957809000000
+  },
+  {
+    "name": "bench:nhcal_basic_distribution_analysis",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247121,
+    "ts": 1785957012000000
+  },
+  {
+    "name": "bench:nhcal_basic_distribution_analysis",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247121,
+    "ts": 1785957651000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247120,
+    "ts": 1785957011000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247120,
+    "ts": 1785957497000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247119,
+    "ts": 1785957011000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247119,
+    "ts": 1785957493000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247118,
+    "ts": 1785957010000000
+  },
+  {
+    "name": "bench:nhcal_acceptance_analysis: [1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247118,
+    "ts": 1785957486000000
+  },
+  {
+    "name": "bench:femc_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247117,
+    "ts": 1785957076000000
+  },
+  {
+    "name": "bench:femc_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247117,
+    "ts": 1785957568000000
+  },
+  {
+    "name": "bench:femc_photon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247116,
+    "ts": 1785957058000000
+  },
+  {
+    "name": "bench:femc_photon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247116,
+    "ts": 1785957542000000
+  },
+  {
+    "name": "bench:femc_electron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247115,
+    "ts": 1785957037000000
+  },
+  {
+    "name": "bench:femc_electron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247115,
+    "ts": 1785957527000000
+  },
+  {
+    "name": "bench:insert_neutron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247114,
+    "ts": 1785957155000000
+  },
+  {
+    "name": "bench:insert_neutron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247114,
+    "ts": 1785957678000000
+  },
+  {
+    "name": "bench:zdc_lambda",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247113,
+    "ts": 1785957008000000
+  },
+  {
+    "name": "bench:zdc_lambda",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247113,
+    "ts": 1785957523000000
+  },
+  {
+    "name": "bench:zdc_sigma",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247112,
+    "ts": 1785957008000000
+  },
+  {
+    "name": "bench:zdc_sigma",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247112,
+    "ts": 1785957542000000
+  },
+  {
+    "name": "bench:insert_tau",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247111,
+    "ts": 1785957007000000
+  },
+  {
+    "name": "bench:insert_tau",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247111,
+    "ts": 1785958796000000
+  },
+  {
+    "name": "bench:insert_muon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247110,
+    "ts": 1785957005000000
+  },
+  {
+    "name": "bench:insert_muon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247110,
+    "ts": 1785957513000000
+  },
+  {
+    "name": "bench:b0_tracker",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247109,
+    "ts": 1785957004000000
+  },
+  {
+    "name": "bench:b0_tracker",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247109,
+    "ts": 1785957465000000
+  },
+  {
+    "name": "bench:drich_fixed_eta",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247108,
+    "ts": 1785957002000000
+  },
+  {
+    "name": "bench:drich_fixed_eta",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247108,
+    "ts": 1785957915000000
+  },
+  {
+    "name": "bench:erich: [proton]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247107,
+    "ts": 1785957002000000
+  },
+  {
+    "name": "bench:erich: [proton]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247107,
+    "ts": 1785957463000000
+  },
+  {
+    "name": "bench:erich: [pi+]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247106,
+    "ts": 1785957001000000
+  },
+  {
+    "name": "bench:erich: [pi+]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247106,
+    "ts": 1785957461000000
+  },
+  {
+    "name": "bench:erich: [e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247105,
+    "ts": 1785956998000000
+  },
+  {
+    "name": "bench:erich: [e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247105,
+    "ts": 1785957460000000
+  },
+  {
+    "name": "bench:drich: [proton]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247104,
+    "ts": 1785956998000000
+  },
+  {
+    "name": "bench:drich: [proton]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247104,
+    "ts": 1785957491000000
+  },
+  {
+    "name": "bench:drich: [pi+]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247103,
+    "ts": 1785956997000000
+  },
+  {
+    "name": "bench:drich: [pi+]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247103,
+    "ts": 1785957488000000
+  },
+  {
+    "name": "bench:drich: [e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247102,
+    "ts": 1785956997000000
+  },
+  {
+    "name": "bench:drich: [e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247102,
+    "ts": 1785957488000000
+  },
+  {
+    "name": "bench:mrich: [proton]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247101,
+    "ts": 1785956996000000
+  },
+  {
+    "name": "bench:mrich: [proton]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247101,
+    "ts": 1785957459000000
+  },
+  {
+    "name": "bench:mrich: [pi+]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247100,
+    "ts": 1785956996000000
+  },
+  {
+    "name": "bench:mrich: [pi+]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247100,
+    "ts": 1785957459000000
+  },
+  {
+    "name": "bench:mrich: [e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247099,
+    "ts": 1785956995000000
+  },
+  {
+    "name": "bench:mrich: [e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247099,
+    "ts": 1785957458000000
+  },
+  {
+    "name": "bench:material_scan",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247098,
+    "ts": 1785956992000000
+  },
+  {
+    "name": "bench:material_scan",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247098,
+    "ts": 1785957507000000
+  },
+  {
+    "name": "bench:zdc_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247097,
+    "ts": 1785956989000000
+  },
+  {
+    "name": "bench:zdc_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247097,
+    "ts": 1785957486000000
+  },
+  {
+    "name": "bench:zdc_photon",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247096,
+    "ts": 1785956988000000
+  },
+  {
+    "name": "bench:zdc_photon",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247096,
+    "ts": 1785957480000000
+  },
+  {
+    "name": "bench:zdc_neutron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247095,
+    "ts": 1785956988000000
+  },
+  {
+    "name": "bench:zdc_neutron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247095,
+    "ts": 1785957464000000
+  },
+  {
+    "name": "bench:zdc_benchmark: [photon]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247094,
+    "ts": 1785956987000000
+  },
+  {
+    "name": "bench:zdc_benchmark: [photon]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247094,
+    "ts": 1785957480000000
+  },
+  {
+    "name": "bench:zdc_benchmark: [neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247093,
+    "ts": 1785956987000000
+  },
+  {
+    "name": "bench:zdc_benchmark: [neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247093,
+    "ts": 1785957477000000
+  },
+  {
+    "name": "bench:lfhcal_campaigns",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247092,
+    "ts": 1785956986000000
+  },
+  {
+    "name": "bench:lfhcal_campaigns",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247092,
+    "ts": 1785959942000000
+  },
+  {
+    "name": "bench:emcal_barrel_pion_rejection",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247090,
+    "ts": 1785956981000000
+  },
+  {
+    "name": "bench:emcal_barrel_pion_rejection",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247090,
+    "ts": 1785957521000000
+  },
+  {
+    "name": "bench:emcal_barrel_photons",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247089,
+    "ts": 1785956980000000
+  },
+  {
+    "name": "bench:emcal_barrel_photons",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247089,
+    "ts": 1785957494000000
+  },
+  {
+    "name": "bench:emcal_barrel_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247088,
+    "ts": 1785957212000000
+  },
+  {
+    "name": "bench:emcal_barrel_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247088,
+    "ts": 1785957769000000
+  },
+  {
+    "name": "bench:emcal_barrel_electrons_scan",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247087,
+    "ts": 1785956971000000
+  },
+  {
+    "name": "bench:emcal_barrel_electrons_scan",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247087,
+    "ts": 1785957443000000
+  },
+  {
+    "name": "bench:emcal_barrel_pions",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247086,
+    "ts": 1785956935000000
+  },
+  {
+    "name": "bench:emcal_barrel_pions",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247086,
+    "ts": 1785957436000000
+  },
+  {
+    "name": "bench:tracking_performance_campaigns",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247084,
+    "ts": 1785956914000000
+  },
+  {
+    "name": "bench:tracking_performance_campaigns",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247084,
+    "ts": 1785959855000000
+  },
+  {
+    "name": "tracking_detectors:plot_hits",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247082,
+    "ts": 1785956911000000
+  },
+  {
+    "name": "tracking_detectors:plot_hits",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247082,
+    "ts": 1785957416000000
+  },
+  {
+    "name": "bench:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247076,
+    "ts": 1785956818000000
+  },
+  {
+    "name": "bench:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247076,
+    "ts": 1785957321000000
+  },
+  {
+    "name": "bench:ecal_gaps",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247075,
+    "ts": 1785956785000000
+  },
+  {
+    "name": "bench:ecal_gaps",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247075,
+    "ts": 1785957274000000
+  },
+  {
+    "name": "bench:campaign",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247074,
+    "ts": 1785956747000000
+  },
+  {
+    "name": "bench:campaign",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247074,
+    "ts": 1785957849000000
+  },
+  {
+    "name": "bench:calo_pid",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247073,
+    "ts": 1785956746000000
+  },
+  {
+    "name": "bench:calo_pid",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247073,
+    "ts": 1785957402000000
+  },
+  {
+    "name": "bench:beamline",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247072,
+    "ts": 1785956731000000
+  },
+  {
+    "name": "bench:beamline",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247072,
+    "ts": 1785957290000000
+  },
+  {
+    "name": "bench:backwards_ecal",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247070,
+    "ts": 1785957154000000
+  },
+  {
+    "name": "bench:backwards_ecal",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247070,
+    "ts": 1785957629000000
+  },
+  {
+    "name": "calib:emcal_barrel_electrons",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247068,
+    "ts": 1785956722000000
+  },
+  {
+    "name": "calib:emcal_barrel_electrons",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247068,
+    "ts": 1785957211000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [8 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247067,
+    "ts": 1785956719000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [8 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247067,
+    "ts": 1785957171000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [6 7]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247066,
+    "ts": 1785956713000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [6 7]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247066,
+    "ts": 1785957170000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [4 5]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247065,
+    "ts": 1785956707000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [4 5]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247065,
+    "ts": 1785957171000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [2 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247064,
+    "ts": 1785956701000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [2 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247064,
+    "ts": 1785957164000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [0 1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247063,
+    "ts": 1785956674000000
+  },
+  {
+    "name": "sim:nhcal_pion_rejection: [0 1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247063,
+    "ts": 1785957129000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [8 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247062,
+    "ts": 1785956671000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [8 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247062,
+    "ts": 1785957143000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [6 7]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247061,
+    "ts": 1785956668000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [6 7]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247061,
+    "ts": 1785957141000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [4 5]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247060,
+    "ts": 1785956662000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [4 5]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247060,
+    "ts": 1785957141000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [2 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247059,
+    "ts": 1785956656000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [2 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247059,
+    "ts": 1785957132000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247058,
+    "ts": 1785956650000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247058,
+    "ts": 1785957127000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [0]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247057,
+    "ts": 1785956632000000
+  },
+  {
+    "name": "sim:nhcal_dimuon_photoproduction: [0]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247057,
+    "ts": 1785957123000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247056,
+    "ts": 1785956611000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247056,
+    "ts": 1785957063000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247055,
+    "ts": 1785956599000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247055,
+    "ts": 1785957056000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247054,
+    "ts": 1785956584000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [10.0, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247054,
+    "ts": 1785957047000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247053,
+    "ts": 1785956575000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247053,
+    "ts": 1785957045000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247052,
+    "ts": 1785956572000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247052,
+    "ts": 1785957042000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247051,
+    "ts": 1785956572000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [5.0, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247051,
+    "ts": 1785957041000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247050,
+    "ts": 1785956566000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247050,
+    "ts": 1785957039000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247049,
+    "ts": 1785956566000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247049,
+    "ts": 1785957038000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247048,
+    "ts": 1785956561000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [2.0, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247048,
+    "ts": 1785957037000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247047,
+    "ts": 1785956560000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247047,
+    "ts": 1785957028000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247046,
+    "ts": 1785956560000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247046,
+    "ts": 1785957024000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247045,
+    "ts": 1785956557000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [1.0, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247045,
+    "ts": 1785957019000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247044,
+    "ts": 1785956553000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247044,
+    "ts": 1785957017000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247043,
+    "ts": 1785956552000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247043,
+    "ts": 1785957017000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247042,
+    "ts": 1785956552000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.7, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247042,
+    "ts": 1785957014000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247041,
+    "ts": 1785956551000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247041,
+    "ts": 1785957011000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247040,
+    "ts": 1785956551000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247040,
+    "ts": 1785957009000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, pi-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247039,
+    "ts": 1785956549000000
+  },
+  {
+    "name": "sim:nhcal_sampling_fraction: [0.5, pi-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247039,
+    "ts": 1785957010000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 8 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247038,
+    "ts": 1785956548000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 8 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247038,
+    "ts": 1785957028000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 6 7]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247037,
+    "ts": 1785956548000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 6 7]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247037,
+    "ts": 1785957023000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 4 5]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247036,
+    "ts": 1785956546000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 4 5]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247036,
+    "ts": 1785957020000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 2 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247035,
+    "ts": 1785956546000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 2 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247035,
+    "ts": 1785957022000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 0 1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247034,
+    "ts": 1785956545000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [5.0, 0 1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247034,
+    "ts": 1785957025000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 8 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247033,
+    "ts": 1785956545000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 8 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247033,
+    "ts": 1785957027000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 4 7]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247032,
+    "ts": 1785956543000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 4 7]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247032,
+    "ts": 1785957027000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247031,
+    "ts": 1785956543000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [2.0, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247031,
+    "ts": 1785957023000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [1.0, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247030,
+    "ts": 1785956542000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [1.0, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247030,
+    "ts": 1785957014000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [1.0, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247029,
+    "ts": 1785956542000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [1.0, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247029,
+    "ts": 1785957016000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.7, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247028,
+    "ts": 1785956540000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.7, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247028,
+    "ts": 1785957016000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.7, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247027,
+    "ts": 1785956539000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.7, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247027,
+    "ts": 1785957013000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.5, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247026,
+    "ts": 1785956539000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.5, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247026,
+    "ts": 1785957012000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.5, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247025,
+    "ts": 1785956535000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution_full: [0.5, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247025,
+    "ts": 1785957009000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 7 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247024,
+    "ts": 1785956534000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 7 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247024,
+    "ts": 1785957006000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 4 6]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247023,
+    "ts": 1785956534000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 4 6]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247023,
+    "ts": 1785957006000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247022,
+    "ts": 1785956533000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [5.0, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247022,
+    "ts": 1785957005000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 7 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247021,
+    "ts": 1785956533000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 7 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247021,
+    "ts": 1785957003000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 4 6]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247020,
+    "ts": 1785956531000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 4 6]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247020,
+    "ts": 1785957004000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247019,
+    "ts": 1785956531000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [2.0, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247019,
+    "ts": 1785957000000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 7 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247018,
+    "ts": 1785956530000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 7 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247018,
+    "ts": 1785956999000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 4 6]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247017,
+    "ts": 1785956530000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 4 6]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247017,
+    "ts": 1785956996000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247016,
+    "ts": 1785956527000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [1.0, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247016,
+    "ts": 1785956995000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 7 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247015,
+    "ts": 1785956527000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 7 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247015,
+    "ts": 1785956998000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 4 6]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247014,
+    "ts": 1785956525000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 4 6]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247014,
+    "ts": 1785956995000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247013,
+    "ts": 1785956525000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.7, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247013,
+    "ts": 1785956993000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 7 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247012,
+    "ts": 1785956524000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 7 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247012,
+    "ts": 1785956990000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 4 6]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247011,
+    "ts": 1785956524000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 4 6]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247011,
+    "ts": 1785956993000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 0 3]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247010,
+    "ts": 1785956521000000
+  },
+  {
+    "name": "sim:nhcal_basic_distribution: [0.5, 0 3]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247010,
+    "ts": 1785956986000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [10GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247009,
+    "ts": 1785956515000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [10GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247009,
+    "ts": 1785956987000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [10GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247008,
+    "ts": 1785956509000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [10GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247008,
+    "ts": 1785956985000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [5GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247007,
+    "ts": 1785956500000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [5GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247007,
+    "ts": 1785956984000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [5GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247006,
+    "ts": 1785956497000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [5GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247006,
+    "ts": 1785956983000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [1GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247005,
+    "ts": 1785956497000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [1GeV, 5 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247005,
+    "ts": 1785956980000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [1GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247004,
+    "ts": 1785956495000000
+  },
+  {
+    "name": "sim:nhcal_acceptance: [1GeV, 0 4]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247004,
+    "ts": 1785956979000000
+  },
+  {
+    "name": "sim:femc_pi0: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247003,
+    "ts": 1785956495000000
+  },
+  {
+    "name": "sim:femc_pi0: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247003,
+    "ts": 1785957074000000
+  },
+  {
+    "name": "sim:femc_pi0: [70]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247002,
+    "ts": 1785956494000000
+  },
+  {
+    "name": "sim:femc_pi0: [70]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247002,
+    "ts": 1785957071000000
+  },
+  {
+    "name": "sim:femc_pi0: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247001,
+    "ts": 1785956492000000
+  },
+  {
+    "name": "sim:femc_pi0: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247001,
+    "ts": 1785957066000000
+  },
+  {
+    "name": "sim:femc_pi0: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8247000,
+    "ts": 1785956491000000
+  },
+  {
+    "name": "sim:femc_pi0: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8247000,
+    "ts": 1785957065000000
+  },
+  {
+    "name": "sim:femc_pi0: [40]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246999,
+    "ts": 1785956491000000
+  },
+  {
+    "name": "sim:femc_pi0: [40]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246999,
+    "ts": 1785957059000000
+  },
+  {
+    "name": "sim:femc_pi0: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246998,
+    "ts": 1785956489000000
+  },
+  {
+    "name": "sim:femc_pi0: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246998,
+    "ts": 1785957055000000
+  },
+  {
+    "name": "sim:femc_pi0: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246997,
+    "ts": 1785956488000000
+  },
+  {
+    "name": "sim:femc_pi0: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246997,
+    "ts": 1785957046000000
+  },
+  {
+    "name": "sim:femc_pi0: [10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246996,
+    "ts": 1785956488000000
+  },
+  {
+    "name": "sim:femc_pi0: [10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246996,
+    "ts": 1785957033000000
+  },
+  {
+    "name": "sim:femc_photon: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246995,
+    "ts": 1785956482000000
+  },
+  {
+    "name": "sim:femc_photon: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246995,
+    "ts": 1785957058000000
+  },
+  {
+    "name": "sim:femc_photon: [70]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246994,
+    "ts": 1785956479000000
+  },
+  {
+    "name": "sim:femc_photon: [70]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246994,
+    "ts": 1785957048000000
+  },
+  {
+    "name": "sim:femc_photon: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246993,
+    "ts": 1785956477000000
+  },
+  {
+    "name": "sim:femc_photon: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246993,
+    "ts": 1785957047000000
+  },
+  {
+    "name": "sim:femc_photon: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246992,
+    "ts": 1785956476000000
+  },
+  {
+    "name": "sim:femc_photon: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246992,
+    "ts": 1785957040000000
+  },
+  {
+    "name": "sim:femc_photon: [40]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246991,
+    "ts": 1785956476000000
+  },
+  {
+    "name": "sim:femc_photon: [40]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246991,
+    "ts": 1785957039000000
+  },
+  {
+    "name": "sim:femc_photon: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246990,
+    "ts": 1785956473000000
+  },
+  {
+    "name": "sim:femc_photon: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246990,
+    "ts": 1785957033000000
+  },
+  {
+    "name": "sim:femc_photon: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246989,
+    "ts": 1785956470000000
+  },
+  {
+    "name": "sim:femc_photon: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246989,
+    "ts": 1785957019000000
+  },
+  {
+    "name": "sim:femc_photon: [10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246988,
+    "ts": 1785956467000000
+  },
+  {
+    "name": "sim:femc_photon: [10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246988,
+    "ts": 1785957001000000
+  },
+  {
+    "name": "sim:femc_electron: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246987,
+    "ts": 1785956464000000
+  },
+  {
+    "name": "sim:femc_electron: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246987,
+    "ts": 1785957037000000
+  },
+  {
+    "name": "sim:femc_electron: [70]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246986,
+    "ts": 1785956464000000
+  },
+  {
+    "name": "sim:femc_electron: [70]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246986,
+    "ts": 1785957031000000
+  },
+  {
+    "name": "sim:femc_electron: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246985,
+    "ts": 1785956460000000
+  },
+  {
+    "name": "sim:femc_electron: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246985,
+    "ts": 1785957029000000
+  },
+  {
+    "name": "sim:femc_electron: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246984,
+    "ts": 1785956459000000
+  },
+  {
+    "name": "sim:femc_electron: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246984,
+    "ts": 1785957027000000
+  },
+  {
+    "name": "sim:femc_electron: [40]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246983,
+    "ts": 1785956459000000
+  },
+  {
+    "name": "sim:femc_electron: [40]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246983,
+    "ts": 1785957018000000
+  },
+  {
+    "name": "sim:femc_electron: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246982,
+    "ts": 1785956458000000
+  },
+  {
+    "name": "sim:femc_electron: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246982,
+    "ts": 1785957012000000
+  },
+  {
+    "name": "sim:femc_electron: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246981,
+    "ts": 1785956458000000
+  },
+  {
+    "name": "sim:femc_electron: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246981,
+    "ts": 1785956996000000
+  },
+  {
+    "name": "sim:femc_electron: [10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246980,
+    "ts": 1785956455000000
+  },
+  {
+    "name": "sim:femc_electron: [10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246980,
+    "ts": 1785956989000000
+  },
+  {
+    "name": "sim:insert_neutron: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246979,
+    "ts": 1785956452000000
+  },
+  {
+    "name": "sim:insert_neutron: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246979,
+    "ts": 1785957152000000
+  },
+  {
+    "name": "sim:insert_neutron: [70]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246978,
+    "ts": 1785956452000000
+  },
+  {
+    "name": "sim:insert_neutron: [70]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246978,
+    "ts": 1785957140000000
+  },
+  {
+    "name": "sim:insert_neutron: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246977,
+    "ts": 1785956444000000
+  },
+  {
+    "name": "sim:insert_neutron: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246977,
+    "ts": 1785957118000000
+  },
+  {
+    "name": "sim:insert_neutron: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246976,
+    "ts": 1785956443000000
+  },
+  {
+    "name": "sim:insert_neutron: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246976,
+    "ts": 1785957100000000
+  },
+  {
+    "name": "sim:insert_neutron: [40]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246975,
+    "ts": 1785956440000000
+  },
+  {
+    "name": "sim:insert_neutron: [40]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246975,
+    "ts": 1785957086000000
+  },
+  {
+    "name": "sim:insert_neutron: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246974,
+    "ts": 1785956437000000
+  },
+  {
+    "name": "sim:insert_neutron: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246974,
+    "ts": 1785957069000000
+  },
+  {
+    "name": "sim:insert_neutron: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246973,
+    "ts": 1785956434000000
+  },
+  {
+    "name": "sim:insert_neutron: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246973,
+    "ts": 1785957049000000
+  },
+  {
+    "name": "sim:zdc_lambda: [275]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246972,
+    "ts": 1785956200000000
+  },
+  {
+    "name": "sim:zdc_lambda: [275]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246972,
+    "ts": 1785956746000000
+  },
+  {
+    "name": "sim:zdc_lambda: [250]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246971,
+    "ts": 1785956152000000
+  },
+  {
+    "name": "sim:zdc_lambda: [250]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246971,
+    "ts": 1785956672000000
+  },
+  {
+    "name": "sim:zdc_lambda: [225]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246970,
+    "ts": 1785955925000000
+  },
+  {
+    "name": "sim:zdc_lambda: [225]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246970,
+    "ts": 1785956547000000
+  },
+  {
+    "name": "sim:zdc_lambda: [200]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246969,
+    "ts": 1785955924000000
+  },
+  {
+    "name": "sim:zdc_lambda: [200]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246969,
+    "ts": 1785956541000000
+  },
+  {
+    "name": "sim:zdc_lambda: [175]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246968,
+    "ts": 1785955924000000
+  },
+  {
+    "name": "sim:zdc_lambda: [175]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246968,
+    "ts": 1785956532000000
+  },
+  {
+    "name": "sim:zdc_lambda: [150]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246967,
+    "ts": 1785955923000000
+  },
+  {
+    "name": "sim:zdc_lambda: [150]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246967,
+    "ts": 1785956526000000
+  },
+  {
+    "name": "sim:zdc_lambda: [125]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246966,
+    "ts": 1785955923000000
+  },
+  {
+    "name": "sim:zdc_lambda: [125]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246966,
+    "ts": 1785956522000000
+  },
+  {
+    "name": "sim:zdc_lambda: [100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246965,
+    "ts": 1785955922000000
+  },
+  {
+    "name": "sim:zdc_lambda: [100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246965,
+    "ts": 1785956518000000
+  },
+  {
+    "name": "sim:zdc_sigma: [275]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246964,
+    "ts": 1785955922000000
+  },
+  {
+    "name": "sim:zdc_sigma: [275]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246964,
+    "ts": 1785956555000000
+  },
+  {
+    "name": "sim:zdc_sigma: [250]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246963,
+    "ts": 1785955921000000
+  },
+  {
+    "name": "sim:zdc_sigma: [250]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246963,
+    "ts": 1785956545000000
+  },
+  {
+    "name": "sim:zdc_sigma: [225]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246962,
+    "ts": 1785955921000000
+  },
+  {
+    "name": "sim:zdc_sigma: [225]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246962,
+    "ts": 1785956545000000
+  },
+  {
+    "name": "sim:zdc_sigma: [200]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246961,
+    "ts": 1785955920000000
+  },
+  {
+    "name": "sim:zdc_sigma: [200]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246961,
+    "ts": 1785956533000000
+  },
+  {
+    "name": "sim:zdc_sigma: [175]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246960,
+    "ts": 1785955920000000
+  },
+  {
+    "name": "sim:zdc_sigma: [175]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246960,
+    "ts": 1785956530000000
+  },
+  {
+    "name": "sim:zdc_sigma: [150]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246959,
+    "ts": 1785955920000000
+  },
+  {
+    "name": "sim:zdc_sigma: [150]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246959,
+    "ts": 1785956521000000
+  },
+  {
+    "name": "sim:zdc_sigma: [125]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246958,
+    "ts": 1785955919000000
+  },
+  {
+    "name": "sim:zdc_sigma: [125]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246958,
+    "ts": 1785956514000000
+  },
+  {
+    "name": "sim:zdc_sigma: [100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246957,
+    "ts": 1785955919000000
+  },
+  {
+    "name": "sim:zdc_sigma: [100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246957,
+    "ts": 1785956507000000
+  },
+  {
+    "name": "sim:insert_tau: [100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246956,
+    "ts": 1785955918000000
+  },
+  {
+    "name": "sim:insert_tau: [100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246956,
+    "ts": 1785956440000000
+  },
+  {
+    "name": "sim:insert_tau: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246955,
+    "ts": 1785955918000000
+  },
+  {
+    "name": "sim:insert_tau: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246955,
+    "ts": 1785956439000000
+  },
+  {
+    "name": "sim:insert_tau: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246954,
+    "ts": 1785955917000000
+  },
+  {
+    "name": "sim:insert_tau: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246954,
+    "ts": 1785956435000000
+  },
+  {
+    "name": "sim:insert_tau: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246953,
+    "ts": 1785955917000000
+  },
+  {
+    "name": "sim:insert_tau: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246953,
+    "ts": 1785956424000000
+  },
+  {
+    "name": "sim:insert_tau: [40]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246952,
+    "ts": 1785955916000000
+  },
+  {
+    "name": "sim:insert_tau: [40]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246952,
+    "ts": 1785956382000000
+  },
+  {
+    "name": "sim:insert_tau: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246951,
+    "ts": 1785955916000000
+  },
+  {
+    "name": "sim:insert_tau: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246951,
+    "ts": 1785956434000000
+  },
+  {
+    "name": "sim:insert_tau: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246950,
+    "ts": 1785955916000000
+  },
+  {
+    "name": "sim:insert_tau: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246950,
+    "ts": 1785956381000000
+  },
+  {
+    "name": "sim:insert_muon: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246949,
+    "ts": 1785955915000000
+  },
+  {
+    "name": "sim:insert_muon: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246949,
+    "ts": 1785956394000000
+  },
+  {
+    "name": "sim:b0_tracker",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246948,
+    "ts": 1785955915000000
+  },
+  {
+    "name": "sim:b0_tracker",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246948,
+    "ts": 1785956969000000
+  },
+  {
+    "name": "sim:forward: [proton]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246947,
+    "ts": 1785955914000000
+  },
+  {
+    "name": "sim:forward: [proton]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246947,
+    "ts": 1785956538000000
+  },
+  {
+    "name": "sim:forward: [pi+]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246946,
+    "ts": 1785955914000000
+  },
+  {
+    "name": "sim:forward: [pi+]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246946,
+    "ts": 1785956547000000
+  },
+  {
+    "name": "sim:forward: [e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246945,
+    "ts": 1785955913000000
+  },
+  {
+    "name": "sim:forward: [e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246945,
+    "ts": 1785956574000000
+  },
+  {
+    "name": "sim:backward: [proton]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246944,
+    "ts": 1785955913000000
+  },
+  {
+    "name": "sim:backward: [proton]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246944,
+    "ts": 1785956532000000
+  },
+  {
+    "name": "sim:backward: [pi+]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246943,
+    "ts": 1785955912000000
+  },
+  {
+    "name": "sim:backward: [pi+]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246943,
+    "ts": 1785956543000000
+  },
+  {
+    "name": "sim:backward: [e-]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246942,
+    "ts": 1785955912000000
+  },
+  {
+    "name": "sim:backward: [e-]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246942,
+    "ts": 1785956570000000
+  },
+  {
+    "name": "sim:zdc_pi0: [160]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246941,
+    "ts": 1785955912000000
+  },
+  {
+    "name": "sim:zdc_pi0: [160]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246941,
+    "ts": 1785956495000000
+  },
+  {
+    "name": "sim:zdc_pi0: [130]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246940,
+    "ts": 1785955911000000
+  },
+  {
+    "name": "sim:zdc_pi0: [130]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246940,
+    "ts": 1785956492000000
+  },
+  {
+    "name": "sim:zdc_pi0: [100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246939,
+    "ts": 1785955911000000
+  },
+  {
+    "name": "sim:zdc_pi0: [100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246939,
+    "ts": 1785956494000000
+  },
+  {
+    "name": "sim:zdc_pi0: [80]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246938,
+    "ts": 1785955910000000
+  },
+  {
+    "name": "sim:zdc_pi0: [80]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246938,
+    "ts": 1785956490000000
+  },
+  {
+    "name": "sim:zdc_pi0: [60]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246937,
+    "ts": 1785955910000000
+  },
+  {
+    "name": "sim:zdc_pi0: [60]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246937,
+    "ts": 1785956490000000
+  },
+  {
+    "name": "sim:zdc_photon: [275]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246936,
+    "ts": 1785955909000000
+  },
+  {
+    "name": "sim:zdc_photon: [275]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246936,
+    "ts": 1785956498000000
+  },
+  {
+    "name": "sim:zdc_photon: [200]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246935,
+    "ts": 1785955909000000
+  },
+  {
+    "name": "sim:zdc_photon: [200]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246935,
+    "ts": 1785956496000000
+  },
+  {
+    "name": "sim:zdc_photon: [150]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246934,
+    "ts": 1785955908000000
+  },
+  {
+    "name": "sim:zdc_photon: [150]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246934,
+    "ts": 1785956496000000
+  },
+  {
+    "name": "sim:zdc_photon: [100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246933,
+    "ts": 1785955908000000
+  },
+  {
+    "name": "sim:zdc_photon: [100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246933,
+    "ts": 1785956487000000
+  },
+  {
+    "name": "sim:zdc_photon: [70]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246932,
+    "ts": 1785955907000000
+  },
+  {
+    "name": "sim:zdc_photon: [70]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246932,
+    "ts": 1785956489000000
+  },
+  {
+    "name": "sim:zdc_photon: [50]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246931,
+    "ts": 1785955907000000
+  },
+  {
+    "name": "sim:zdc_photon: [50]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246931,
+    "ts": 1785956476000000
+  },
+  {
+    "name": "sim:zdc_photon: [30]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246930,
+    "ts": 1785955906000000
+  },
+  {
+    "name": "sim:zdc_photon: [30]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246930,
+    "ts": 1785956469000000
+  },
+  {
+    "name": "sim:zdc_photon: [20]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246929,
+    "ts": 1785955906000000
+  },
+  {
+    "name": "sim:zdc_photon: [20]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246929,
+    "ts": 1785956465000000
+  },
+  {
+    "name": "sim:zdc_neutron",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246928,
+    "ts": 1785955906000000
+  },
+  {
+    "name": "sim:zdc_neutron",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246928,
+    "ts": 1785956477000000
+  },
+  {
+    "name": "sim:zdc_lyso",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246927,
+    "ts": 1785955905000000
+  },
+  {
+    "name": "sim:zdc_lyso",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246927,
+    "ts": 1785956667000000
+  },
+  {
+    "name": "sim:zdc: [photon]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246926,
+    "ts": 1785955905000000
+  },
+  {
+    "name": "sim:zdc: [photon]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246926,
+    "ts": 1785956815000000
+  },
+  {
+    "name": "sim:zdc: [neutron]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246925,
+    "ts": 1785955904000000
+  },
+  {
+    "name": "sim:zdc: [neutron]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246925,
+    "ts": 1785956745000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246924,
+    "ts": 1785955904000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246924,
+    "ts": 1785958876000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246923,
+    "ts": 1785955903000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246923,
+    "ts": 1785958901000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246922,
+    "ts": 1785955903000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246922,
+    "ts": 1785956486000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246921,
+    "ts": 1785955903000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246921,
+    "ts": 1785956471000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246920,
+    "ts": 1785955902000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246920,
+    "ts": 1785956463000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246919,
+    "ts": 1785955902000000
+  },
+  {
+    "name": "sim:lfhcal: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246919,
+    "ts": 1785956476000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246918,
+    "ts": 1785955901000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246918,
+    "ts": 1785956491000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246917,
+    "ts": 1785955901000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246917,
+    "ts": 1785956462000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246916,
+    "ts": 1785955900000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246916,
+    "ts": 1785956454000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246915,
+    "ts": 1785955900000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246915,
+    "ts": 1785956451000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246914,
+    "ts": 1785955899000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246914,
+    "ts": 1785956457000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246913,
+    "ts": 1785955899000000
+  },
+  {
+    "name": "sim:lfhcal: [neutron, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246913,
+    "ts": 1785956456000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246912,
+    "ts": 1785955898000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246912,
+    "ts": 1785956474000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246911,
+    "ts": 1785955898000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246911,
+    "ts": 1785956459000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246910,
+    "ts": 1785955897000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246910,
+    "ts": 1785956459000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246909,
+    "ts": 1785955897000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246909,
+    "ts": 1785956481000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246908,
+    "ts": 1785955897000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246908,
+    "ts": 1785956457000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246907,
+    "ts": 1785955896000000
+  },
+  {
+    "name": "sim:lfhcal: [gamma, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246907,
+    "ts": 1785956450000000
+  },
+  {
+    "name": "sim:emcal_barrel_pion_rejection",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246906,
+    "ts": 1785955896000000
+  },
+  {
+    "name": "sim:emcal_barrel_pion_rejection",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246906,
+    "ts": 1785956369000000
+  },
+  {
+    "name": "sim:emcal_barrel_photons",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246905,
+    "ts": 1785955895000000
+  },
+  {
+    "name": "sim:emcal_barrel_photons",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246905,
+    "ts": 1785956333000000
+  },
+  {
+    "name": "sim:emcal_barrel_electrons",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246904,
+    "ts": 1785955895000000
+  },
+  {
+    "name": "sim:emcal_barrel_electrons",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246904,
+    "ts": 1785956362000000
+  },
+  {
+    "name": "sim:emcal_barrel_pi0",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246903,
+    "ts": 1785955894000000
+  },
+  {
+    "name": "sim:emcal_barrel_pi0",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246903,
+    "ts": 1785956329000000
+  },
+  {
+    "name": "sim:emcal_barrel_pions",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246902,
+    "ts": 1785955894000000
+  },
+  {
+    "name": "sim:emcal_barrel_pions",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246902,
+    "ts": 1785956363000000
+  },
+  {
+    "name": "sim:tracking_performances_dis",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246901,
+    "ts": 1785955893000000
+  },
+  {
+    "name": "sim:tracking_performances_dis",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246901,
+    "ts": 1785957106000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246900,
+    "ts": 1785955893000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246900,
+    "ts": 1785958978000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246899,
+    "ts": 1785955892000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246899,
+    "ts": 1785958871000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246898,
+    "ts": 1785955892000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246898,
+    "ts": 1785956551000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246897,
+    "ts": 1785955892000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246897,
+    "ts": 1785956548000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246896,
+    "ts": 1785955891000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246896,
+    "ts": 1785956549000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246895,
+    "ts": 1785955891000000
+  },
+  {
+    "name": "sim:tracking_performance: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246895,
+    "ts": 1785956527000000
+  },
+  {
+    "name": "tracking_detectors:sim_track_hits",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246894,
+    "ts": 1785955890000000
+  },
+  {
+    "name": "tracking_detectors:sim_track_hits",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246894,
+    "ts": 1785956654000000
+  },
+  {
+    "name": "sim:lowq2_reconstruction",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246893,
+    "ts": 1785955890000000
+  },
+  {
+    "name": "sim:lowq2_reconstruction",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246893,
+    "ts": 1785957076000000
+  },
+  {
+    "name": "sim:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246892,
+    "ts": 1785955889000000
+  },
+  {
+    "name": "sim:far_forward_dvcs",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246892,
+    "ts": 1785956443000000
+  },
+  {
+    "name": "sim:ecal_gaps",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246891,
+    "ts": 1785955889000000
+  },
+  {
+    "name": "sim:ecal_gaps",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246891,
+    "ts": 1785956609000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 90 99]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246889,
+    "ts": 1785955888000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 90 99]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246889,
+    "ts": 1785956563000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 80 89]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246887,
+    "ts": 1785955888000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 80 89]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246887,
+    "ts": 1785956563000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 70 79]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246885,
+    "ts": 1785955888000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 70 79]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246885,
+    "ts": 1785956529000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 60 69]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246884,
+    "ts": 1785955887000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 60 69]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246884,
+    "ts": 1785956528000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 50 59]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246882,
+    "ts": 1785955887000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 50 59]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246882,
+    "ts": 1785956523000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 40 49]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246880,
+    "ts": 1785955886000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 40 49]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246880,
+    "ts": 1785956536000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 30 39]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246878,
+    "ts": 1785955886000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 30 39]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246878,
+    "ts": 1785956532000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 20 29]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246876,
+    "ts": 1785955885000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 20 29]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246876,
+    "ts": 1785956524000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 10 19]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246874,
+    "ts": 1785955885000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 10 19]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246874,
+    "ts": 1785956559000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 0 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246872,
+    "ts": 1785955884000000
+  },
+  {
+    "name": "sim:calo_pid: [pi-, 0 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246872,
+    "ts": 1785956550000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 90 99]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246870,
+    "ts": 1785955884000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 90 99]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246870,
+    "ts": 1785956572000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 80 89]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246868,
+    "ts": 1785955883000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 80 89]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246868,
+    "ts": 1785956557000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 70 79]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246866,
+    "ts": 1785955883000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 70 79]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246866,
+    "ts": 1785956536000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 60 69]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246864,
+    "ts": 1785955883000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 60 69]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246864,
+    "ts": 1785956549000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 50 59]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246862,
+    "ts": 1785955882000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 50 59]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246862,
+    "ts": 1785956544000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 40 49]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246860,
+    "ts": 1785955882000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 40 49]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246860,
+    "ts": 1785956544000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 30 39]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246858,
+    "ts": 1785955881000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 30 39]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246858,
+    "ts": 1785956542000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 20 29]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246856,
+    "ts": 1785955881000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 20 29]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246856,
+    "ts": 1785956534000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 10 19]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246854,
+    "ts": 1785955880000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 10 19]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246854,
+    "ts": 1785956542000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 0 9]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246852,
+    "ts": 1785955880000000
+  },
+  {
+    "name": "sim:calo_pid: [e-, 0 9]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246852,
+    "ts": 1785956549000000
+  },
+  {
+    "name": "sim:beamline",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246850,
+    "ts": 1785955879000000
+  },
+  {
+    "name": "sim:beamline",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246850,
+    "ts": 1785956299000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246848,
+    "ts": 1785955879000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246848,
+    "ts": 1785956720000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246846,
+    "ts": 1785955878000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246846,
+    "ts": 1785956716000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246844,
+    "ts": 1785955878000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246844,
+    "ts": 1785956707000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246842,
+    "ts": 1785955877000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246842,
+    "ts": 1785956700000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246840,
+    "ts": 1785955877000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246840,
+    "ts": 1785956711000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246838,
+    "ts": 1785955877000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246838,
+    "ts": 1785957153000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 200MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246836,
+    "ts": 1785955876000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 200MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246836,
+    "ts": 1785956730000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 100MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246834,
+    "ts": 1785955875000000
+  },
+  {
+    "name": "sim:backwards_ecal: [pi-, 100MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246834,
+    "ts": 1785956296000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 20GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246832,
+    "ts": 1785955874000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 20GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246832,
+    "ts": 1785956670000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 10GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246830,
+    "ts": 1785955873000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 10GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246830,
+    "ts": 1785956660000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 5GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246828,
+    "ts": 1785955872000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 5GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246828,
+    "ts": 1785956647000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 2GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246826,
+    "ts": 1785955871000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 2GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246826,
+    "ts": 1785956631000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 1GeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246824,
+    "ts": 1785955870000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 1GeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246824,
+    "ts": 1785956597000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 500MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246822,
+    "ts": 1785955869000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 500MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246822,
+    "ts": 1785956581000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 200MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246820,
+    "ts": 1785955868000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 200MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246820,
+    "ts": 1785956560000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 100MeV]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246818,
+    "ts": 1785955867000000
+  },
+  {
+    "name": "sim:backwards_ecal: [e-, 100MeV]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246818,
+    "ts": 1785956528000000
+  },
+  {
+    "name": "sim:backgrounds",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246816,
+    "ts": 1785955866000000
+  },
+  {
+    "name": "sim:backgrounds",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246816,
+    "ts": 1785956782000000
+  },
+  {
+    "name": "common:setup",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246814,
+    "ts": 1785955698000000
+  },
+  {
+    "name": "common:setup",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246814,
+    "ts": 1785955863000000
+  },
+  {
+    "name": "benchmarks:detector:pending",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147324,
+    "tid": 8246813,
+    "ts": 1785955680000000
+  },
+  {
+    "name": "benchmarks:detector:pending",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147324,
+    "tid": 8246813,
+    "ts": 1785955692000000
+  },
+  {
+    "name": "benchmarks:physics:failure",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246890,
+    "ts": 1785957716000000
+  },
+  {
+    "name": "benchmarks:physics:failure",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246890,
+    "ts": 1785958091000000
+  },
+  {
+    "name": "semi_coherent:results",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246875,
+    "ts": 1785956494000000
+  },
+  {
+    "name": "semi_coherent:results",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246875,
+    "ts": 1785956934000000
+  },
+  {
+    "name": "demp:results",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246873,
+    "ts": 1785956455000000
+  },
+  {
+    "name": "demp:results",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246873,
+    "ts": 1785956912000000
+  },
+  {
+    "name": "diffractive_vm:results",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246871,
+    "ts": 1785956443000000
+  },
+  {
+    "name": "diffractive_vm:results",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246871,
+    "ts": 1785956909000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 1000]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246869,
+    "ts": 1785956425000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 1000]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246869,
+    "ts": 1785957714000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246867,
+    "ts": 1785956395000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246867,
+    "ts": 1785957693000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246865,
+    "ts": 1785956383000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246865,
+    "ts": 1785957677000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246863,
+    "ts": 1785956383000000
+  },
+  {
+    "name": "dis:simulate: [18, 275, 1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246863,
+    "ts": 1785957112000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 1000]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246861,
+    "ts": 1785956380000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 1000]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246861,
+    "ts": 1785957675000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246859,
+    "ts": 1785956371000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246859,
+    "ts": 1785957671000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246857,
+    "ts": 1785956365000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246857,
+    "ts": 1785957671000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246855,
+    "ts": 1785956365000000
+  },
+  {
+    "name": "dis:simulate: [10, 100, 1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246855,
+    "ts": 1785957676000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246853,
+    "ts": 1785956335000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246853,
+    "ts": 1785957628000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 10]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246851,
+    "ts": 1785956332000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 10]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246851,
+    "ts": 1785957628000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 1]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246849,
+    "ts": 1785956302000000
+  },
+  {
+    "name": "dis:simulate: [5, 41, 1]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246849,
+    "ts": 1785957526000000
+  },
+  {
+    "name": "u_omega:simulate",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246847,
+    "ts": 1785956299000000
+  },
+  {
+    "name": "u_omega:simulate",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246847,
+    "ts": 1785957444000000
+  },
+  {
+    "name": "tcs:simulate: [18, 275, s800]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246845,
+    "ts": 1785956275000000
+  },
+  {
+    "name": "tcs:simulate: [18, 275, s800]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246845,
+    "ts": 1785957405000000
+  },
+  {
+    "name": "tcs:simulate: [10, 100, s100]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246843,
+    "ts": 1785956242000000
+  },
+  {
+    "name": "tcs:simulate: [10, 100, s100]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246843,
+    "ts": 1785957358000000
+  },
+  {
+    "name": "tcs:simulate: [5, 41, s450]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246841,
+    "ts": 1785956239000000
+  },
+  {
+    "name": "tcs:simulate: [5, 41, s450]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246841,
+    "ts": 1785957357000000
+  },
+  {
+    "name": "dvcs:simulate",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246839,
+    "ts": 1785956224000000
+  },
+  {
+    "name": "dvcs:simulate",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246839,
+    "ts": 1785957359000000
+  },
+  {
+    "name": "semi_coherent:simulate",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246837,
+    "ts": 1785955876000000
+  },
+  {
+    "name": "semi_coherent:simulate",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246837,
+    "ts": 1785956492000000
+  },
+  {
+    "name": "demp:simulate",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246835,
+    "ts": 1785955875000000
+  },
+  {
+    "name": "demp:simulate",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246835,
+    "ts": 1785956454000000
+  },
+  {
+    "name": "diffractive_vm:simulate: [jpsi]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246833,
+    "ts": 1785955874000000
+  },
+  {
+    "name": "diffractive_vm:simulate: [jpsi]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246833,
+    "ts": 1785956442000000
+  },
+  {
+    "name": "diffractive_vm:simulate: [phi]",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246831,
+    "ts": 1785955873000000
+  },
+  {
+    "name": "diffractive_vm:simulate: [phi]",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246831,
+    "ts": 1785956378000000
+  },
+  {
+    "name": "dis:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246829,
+    "ts": 1785955872000000
+  },
+  {
+    "name": "dis:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246829,
+    "ts": 1785956272000000
+  },
+  {
+    "name": "u_omega:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246827,
+    "ts": 1785955871000000
+  },
+  {
+    "name": "u_omega:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246827,
+    "ts": 1785956239000000
+  },
+  {
+    "name": "tcs:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246825,
+    "ts": 1785955870000000
+  },
+  {
+    "name": "tcs:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246825,
+    "ts": 1785956237000000
+  },
+  {
+    "name": "dvcs:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246823,
+    "ts": 1785955869000000
+  },
+  {
+    "name": "dvcs:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246823,
+    "ts": 1785956220000000
+  },
+  {
+    "name": "demp:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246821,
+    "ts": 1785955868000000
+  },
+  {
+    "name": "demp:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246821,
+    "ts": 1785956197000000
+  },
+  {
+    "name": "diffractive_vm:compile",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246819,
+    "ts": 1785955867000000
+  },
+  {
+    "name": "diffractive_vm:compile",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246819,
+    "ts": 1785956149000000
+  },
+  {
+    "name": "common:setup",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246817,
+    "ts": 1785955692000000
+  },
+  {
+    "name": "common:setup",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246817,
+    "ts": 1785955864000000
+  },
+  {
+    "name": "benchmarks:physics:pending",
+    "cat": "PERF",
+    "ph": "B",
+    "pid": 147325,
+    "tid": 8246815,
+    "ts": 1785955674000000
+  },
+  {
+    "name": "benchmarks:physics:pending",
+    "cat": "PERF",
+    "ph": "E",
+    "pid": 147325,
+    "tid": 8246815,
+    "ts": 1785955687000000
+  }
+]
